@@ -34,12 +34,12 @@ int main(int argc, char **argv) {
     x++;                                                                               
     // Instruccion para escribir en archivo una cadena                                 
     // acompanada del valor de 'x'
-    dprintf(fd,"El padre escribe, x = %d\n",x);                                                   
+    dprintf(fd,"El hijo tambien escribe, x = %d\n",x);                                                 
   } else {                                                                             
     x+=2;                                                                              
     // Instruccion para escribir en archivo una cadena                                 
     // acompanada del valor de 'x'           
-    dprintf(fd,"El hijo tambien escribe, x = %d\n",x);                                          
+    dprintf(fd,"El padre escribe, x = %d\n",x);                                           
   }                                                                                    
                                                                                        
   close(fd);                                                                           
